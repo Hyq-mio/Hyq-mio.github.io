@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>魔镜魔镜告诉我</title>
     <style>
-        div {
+        button {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
+            display: block;
+            /* margin-left: 500px; */
             margin: 0 auto;
-        }
-
-        button {
-            width: 695px;
-            height: 680px;
-            background-image: url(./02.jpg);
-            transform: scale(0.5);
+            background-color: pink;
+            width: 120px;
+            height: 60px;
+            /* font-size: 20px; */
         }
     </style>
 </head>
 <body>
-    <div>
-        <button></button>
-    </div>
+    <button>谁是世界上最美丽的女人？</button>
     <script>
-        let pic = document.querySelector('div')
         let btn = document.querySelector('button')
         btn.addEventListener('click',function () {
             alert('是毛诗野')
